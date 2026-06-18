@@ -6,6 +6,7 @@ import {
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Lenis from "lenis";
+import { Analytics } from "@vercel/analytics/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -1846,6 +1847,7 @@ export default function App() {
           <p className="footer-copy">© {new Date().getFullYear()} Jibu Mathew. All rights reserved.</p>
         </div>
       </footer>
+      <Analytics />
     </div>
   );
 }
